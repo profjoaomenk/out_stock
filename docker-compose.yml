@@ -4,6 +4,7 @@ services:
   db:
     container_name: db
     image: mysql
+    restart: always
     environment:
       MYSQL_USER: admdimdim
       MYSQL_PASSWORD: admdimdim
@@ -18,6 +19,7 @@ services:
       - db_data:/var/lib/mysql
   app:
     container_name: outstock
+    restart: always
     build: .
     ports:
       - "5000:5000"
