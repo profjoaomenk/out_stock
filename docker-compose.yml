@@ -10,7 +10,6 @@ services:
       MYSQL_PASSWORD: admdimdim
       MYSQL_DATABASE: out_stock
       MYSQL_ROOT_PASSWORD: admdimdim
-    command: --default-authentication-plugin=mysql_native_password
     ports:
       - "3306:3306"
     networks:
