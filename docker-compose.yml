@@ -9,7 +9,7 @@ services:
       MYSQL_PASSWORD: admdimdim
       MYSQL_DATABASE: out_stock
       MYSQL_ROOT_PASSWORD: admdimdim
-    # Utilizado para compatibilidade de conectores antigos. A partir do MySQL 8.0 o padrão é: caching_sha2_password (para uitilizar esse padrão basta não incluir essa linha no Docker Compose)
+    # Utilizado para compatibilidade de conectores antigos. A partir do MySQL 8.0 o padrão é: caching_sha2_password (para utilizar esse padrão basta não incluir essa linha no Docker Compose)
     command: --default-authentication-plugin=mysql_native_password
     ports:
       - "3306:3306"
